@@ -1,0 +1,72 @@
+{
+  "accounts": {
+    "account{-1}": "0x54381f58405821175F4E1aBD72f154cC5F72b235"
+  },
+  "linkReferences": {},
+  "transactions": [
+    {
+      "timestamp": 1689718028839,
+      "record": {
+        "value": "0",
+        "inputs": "()",
+        "parameters": [],
+        "name": "",
+        "type": "constructor",
+        "abi": "0x52ff49d0749951a2132070c48a038be289f2b4323f4eaa578f1506e5046b4442",
+        "contractName": "BankAccount",
+        "bytecode": "6080604052335f806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506102b5806100505f395ff3fe60806040526004361061003e575f3560e01c80633ccfd60b146100425780638da5cb5b1461004c578063c71daccb14610076578063d0e30db0146100a0575b5f80fd5b61004a6100aa565b005b348015610057575f80fd5b50610060610152565b60405161006d91906101bd565b60405180910390f35b348015610081575f80fd5b5061008a610175565b60405161009791906101ee565b60405180910390f35b6100a861017c565b005b344710156100ed576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016100e490610261565b60405180910390fd5b5f8054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc4790811502906040515f60405180830381858888f1935050505015801561014f573d5f803e3d5ffd5b50565b5f8054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b5f47905090565b565b5f73ffffffffffffffffffffffffffffffffffffffff82169050919050565b5f6101a78261017e565b9050919050565b6101b78161019d565b82525050565b5f6020820190506101d05f8301846101ae565b92915050565b5f819050919050565b6101e8816101d6565b82525050565b5f6020820190506102015f8301846101df565b92915050565b5f82825260208201905092915050565b7f4e4f5420454e4f5547482046554e4453000000000000000000000000000000005f82015250565b5f61024b601083610207565b915061025682610217565b602082019050919050565b5f6020820190508181035f8301526102788161023f565b905091905056fea2646970667358221220b5668312871a3e7d5561af03ff8f7e9e65b936bb2938d27df26d486c9d1c330d64736f6c63430008140033",
+        "linkReferences": {},
+        "from": "account{-1}"
+      }
+    }
+  ],
+  "abis": {
+    "0x52ff49d0749951a2132070c48a038be289f2b4323f4eaa578f1506e5046b4442": [
+      {
+        "inputs": [],
+        "stateMutability": "payable",
+        "type": "constructor"
+      },
+      {
+        "inputs": [],
+        "name": "checkBalance",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "deposit",
+        "outputs": [],
+        "stateMutability": "payable",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "owner",
+        "outputs": [
+          {
+            "internalType": "address payable",
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "withdraw",
+        "outputs": [],
+        "stateMutability": "payable",
+        "type": "function"
+      }
+    ]
+  }
+}
