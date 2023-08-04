@@ -21,7 +21,7 @@ contract BankAccount {
     }
 
     function withdraw(uint256 amountInWei) external payable onlyOnwer {
-        require(address(this).balance >= amountInWei, "NOT ENOUGH BALANCE");
+        require(address(this).balance >= amountInWei, "INSUFFICIENT BALANCE");
         owner.transfer(amountInWei);
     }
 
@@ -30,8 +30,7 @@ contract BankAccount {
     }
 
     function sendTo(address payable _to, uint256 amountInWei) external payable onlyOnwer {
-        require(address(this).balance >= amountInWei, "Insufficient balance");
-        
+        require(address(this).balance >= amountInWei, "INSUFFICIENT BALANCE");
         _to.transfer(amountInWei);
     }
 
