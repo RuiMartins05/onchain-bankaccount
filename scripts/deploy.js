@@ -12,7 +12,6 @@ async function main() {
 
   console.log("BankAccount Contract Address:", bankAccountContract.target);
 
-
   await sleep(30 * 1000); 
   
   await hre.run("verify:verify", {
